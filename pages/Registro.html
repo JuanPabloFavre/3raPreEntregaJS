@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ingreso de comprobante Venta</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo-menu">
+      <div>
+        <a href="../index.html">
+          <img src="../img/logo.png" alt="logo-empresa" />
+        </a>
+      </div>
+      <div class="nav-bar">
+        <a href="#ubicacion-venta">Nueva Venta</a>
+        <a href="#ubicacion-cliente">Clientes</a>
+        <a href="#ubicacion-producto">Productos</a>
+        <a href="#ubicacion-registro">Usuarios</a>
+      </div>
+    </div>
+
+  </header>
+  <nav class="titulo-pagina" id="ubicacion-venta">
+    <h1>Nuevo Comprobante</h1>
+  </nav>
+
+  <main class="clientes">
+
+    <form id="ficha-venta" class="venta-clientes">
+      <div>
+      <label for="comprobante">Comprobante</label>
+      <input type="text" name="comprobante" id="compventa" placeholder="Factura 1234">
+    </div>
+
+    <div>
+      <label for="cliente">Nombre Cliente</label>
+      <input type="text" name="cliente" id="clienteventa" placeholder="Juan Perez">
+    </div>
+
+    <div>
+      <label for="moneda">Moneda</label>
+      <input type="text" name="cliente" id="monventa" placeholder="Pesos o Dolares">
+    </div>
+  </div>
+
+      <table>
+        <thead>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Importe</th>
+            <th>Total</th>
+        </thead>
+        <tr>
+            <td><input type="text" id="art1"></td>
+            <td><input type="number" id="cant1"></td>
+            <td><input type="number" id="val1"></td>
+            <td><input type="text" class="subtotal" id="tot1" readonly></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="art2"></td>
+          <td><input type="number" id="cant2"></td>
+          <td><input type="number" id="val2"></td>
+          <td><input type="text" class="subtotal" id="tot2" readonly></td>
+      </tr>
+      <tr>
+        <td><input type="text" id="art3"></td>
+        <td><input type="number" id="cant3"></td>
+        <td><input type="number" id="val3"></td>
+        <td><input type="text" class="subtotal" id="tot3" readonly></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Base Imponible<br>IVA 22%<br><span>Total</span></td>
+      <td> <input type="text" id="base" readonly><br><input type="text" id="iva" readonly><br><input type="text" id="total" readonly></td>
+  </tr>
+    </table>
+
+    <div>
+      <input type="submit" value="Emitir Comprobante" class="guardarcl" />
+    </div>
+
+    </form>
+
+    <div class="comprobantes-ingresados">
+      <h2>Comprobantes Emitidos</h2>
+      <div id="lista-venta"></div>
+    </div>
+
+  </main>
+
+  <nav class="titulo-pagina" id="ubicacion-cliente">
+    <h1>Nuevo Cliente</h1>
+  </nav>
+
+  <nav class="clientes">
+
+    <form class="ficha-cliente" id="ficha-registro">
+
+      <div>
+        <label for="codigo">Codigo</label>
+        <input type="number" name="codigo" id="codigoCl" />
+      </div>
+
+      <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombreCl" />
+      </div>
+
+      <div>
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellidoCl" />
+      </div>
+
+      <div>
+        <label for="direccion">Direccion</label>
+        <input type="text" name="direccion" id="direccionCl" />
+      </div>
+
+      <div>
+        <label for="telefono">Telefono</label>
+        <input type="text" name="telefono" id="telefonoCl" />
+      </div>
+
+      <div>
+        <label for="email">Correo Electronico</label>
+        <input type="email" name="email" id="emailCl" />
+      </div>
+
+      <div>
+        <input type="submit" value="Guardar" class="guardarcl">
+      </div>
+    </form>
+
+    <div class="clientes-ingresados">
+      <h2>Clientes Ingresados</h2>
+      <div id="lista-clientes"></div>
+    </div>
+
+  </nav>
+
+
+  <nav class="titulo-pagina" id="ubicacion-producto">
+    <h1>Ingreso de Productos</h1>
+  </nav>
+
+  <main class="clientes">
+    <form class="ficha-cliente" id="ficha-productos">
+      <div>
+        <label for="codigo">Codigo</label>
+        <input type="number" name="codigo" id="codprod" />
+      </div>
+
+      <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nomprod" />
+      </div>
+
+      <div>
+        <label for="familia">Familia</label>
+        <input type="text" name="familia" id="famprod" />
+      </div>
+
+      <div>
+        <label for="familia">Moneda</label>
+        <input type="text" name="moneda" id="monprod" />
+      </div>
+
+      <div>
+        <label for="precio">Precio</label>
+        <input type="number" name="precio" id="preprod" />
+      </div>
+
+      <div>
+        <input type="submit" value="Guardar" class="guardarcl" />
+      </div>
+    </form>
+
+    <div class="productos-ingresados">
+      <h2>Productos Ingresados</h2>
+      <div id="lista-productos"></div>
+    </div>
+  </main>
+
+  <nav class="titulo-pagina" id="ubicacion-registro">
+    <h1>Regristro Usuario</h1>
+  </nav>
+
+  <main>
+    <form class="ficha-registro" id="ficha-usuario">
+      <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nomusu" />
+      </div>
+
+      <div>
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apeusu" />
+      </div>
+
+      <div>
+        <label for="usuario">Usuario</label>
+        <input type="text" name="usuario" id="logusu" />
+      </div>
+
+      <div>
+        <label for="clave">Contraseña</label>
+        <input type="password" name="clave" id="claveusu" />
+      </div>
+
+      <div>
+        <input type="submit" value="Guardar Usuario" class="guardarcl" />
+      </div>
+    </form>
+
+    <div class="clientes-ingresados">
+      <h2>Usuarios Ingresados</h2>
+      <div id="lista-usuarios"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="banner-footer">
+      <img src="../img/footer.png" alt="banner" />
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

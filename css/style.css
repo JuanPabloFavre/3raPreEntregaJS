@@ -1,0 +1,578 @@
+*{
+    padding: none;
+    margin: none;
+    text-decoration:none;
+}
+
+.logo-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 100px;
+    background-image: url(../img/header.jpg);
+   
+
+}
+
+.logo-menu img{
+   width: 150px;
+}
+
+body{
+    background-image: url(../img/login.jpg);
+background-size: cover;
+}
+
+.login{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.login label{
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.login input{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.login-inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+.login-inicio div{
+height: 100px;
+margin-top: 100px;
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
+.logo-inicio img{
+    margin-right: 10px;
+    width: 250px;
+    height: 200px;
+}
+
+.boton{
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: cornflowerblue;
+    color: antiquewhite;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.boton:hover{
+    background-color: rgb(59, 96, 165);
+}
+
+.banner-index img{
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar{
+    color: antiquewhite;
+    position: fixed;
+    margin-left: 1150px;
+   
+
+}
+
+.nav-bar a{
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    padding: 15px;
+    background-color: rgb(114, 196, 134);
+    border-radius: 5px;
+    font-size: 1rem;
+
+
+}
+
+.nav-bar a:hover{
+    background-color: rgb(53, 54, 54);
+    color: rgb(242, 245, 245);
+}
+
+
+.nav-bar-inicio{
+    color: antiquewhite;
+    margin-left: 1150px;
+   
+
+}
+
+.nav-bar-inicio a{
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    padding: 15px;
+    background-color: rgb(33, 66, 172);
+    border-radius: 5px;
+    font-size: 1rem;
+
+}
+
+.nav-bar-inicio a:hover{
+    background-color: rgb(53, 54, 54);
+    color: rgb(242, 245, 245);
+}
+
+.nav-bar-cerrar a{
+    background-color: red;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.nav-bar-cerrar a:hover{
+background-color: rgb(88, 8, 8);
+
+
+}
+
+
+.informacion-index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.informacion-index img{
+    margin-top: 50px;
+    width: 1000px;
+}
+
+.titulo-pagina{
+    background-color: rgba(5, 16, 37, 0.432);
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.banner-info img{
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-footer img{
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  height: 100px;
+}
+
+.orden-info{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    justify-items: center;
+    margin-right: 200px;
+}
+
+.info{
+position: relative;
+display: inline-block;
+text-align: center;
+margin-top: 50px;
+height: 500px;
+width: 500px;
+background-color: antiquewhite;
+
+}
+
+.info img{
+    border: 2px solid black;
+    height: 500px;
+    width: 700px; 
+}
+
+.info p{
+font-size: 1.3rem;
+position: relative;
+position: absolute;
+top: 371px;
+left: 10px;
+color: rgb(255, 255, 255);
+background-color: rgba(73, 69, 64, 0.315);
+width: 650px;
+
+
+}
+
+
+.comprobante{
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecera-comprobante{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 300px;
+margin-top: 20px;
+margin-bottom: 20px;
+    
+}
+
+.datos-cliente{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items:baseline;
+    border: solid 2px black;
+    height: 100%;
+    width: 600px;
+}
+.datos-empresa{
+    border: solid 2px black;
+    height: 100%;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info-empresa{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.logo-empresa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 100px;
+}
+.logo-empresa img{
+    height: 100px;
+
+}
+
+.datos-cliente div{
+    padding: 10px;
+ 
+}
+
+.datos-comprobante{
+    border: 1px solid black;
+}
+
+.cuerpo-comprobante{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: solid 2px black;
+   width: 1200px;
+   margin-left: 350px;
+}
+.pie-comprobante{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+}
+.confirmar{
+    padding: 15px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    color: wheat;
+    cursor: pointer;
+}
+
+.confirmar:hover{
+    background-color: rgb(2, 56, 2);
+}
+
+.cancelar{
+    padding: 15px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: wheat;
+    cursor:pointer;
+}
+
+.cancelar:hover{
+    background-color: rgb(126, 13, 13);
+}
+
+
+.ficha-cliente{
+ display: flex;   
+ justify-content: center;
+ align-items: flex-start;
+flex-direction: column;
+font-size: 2rem;
+
+margin-left: 50px;
+
+
+}
+
+.ficha-cliente div{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+
+.venta-clientes{
+    display: flex;   
+    justify-content: center;
+    align-items: flex-start;
+   flex-direction: column;
+   font-size: 1.5rem;
+   
+   margin-left: 50px;
+   
+   
+   }
+   
+   .venta-clientes div{
+       margin-top: 10px;
+       margin-bottom: 30px;
+   }
+
+.lista-clientes{
+    background-color: aqua;
+    width: 700px;
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+.clientes{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    border: solid 2px black;
+    margin-top: 20px;
+   
+}
+
+.cerrar-sesion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cerrar-sesion a{
+    background-color: red;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.cerrar-sesion a:hover{
+    background-color: rgb(59, 4, 4);
+}
+
+.registro{
+    background-color: rgb(9, 129, 9);
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    color: antiquewhite;
+    cursor: pointer;
+    padding: 5px;
+}
+.registro:hover{
+    background-color: rgb(3, 32, 3);
+}
+
+.ficha-registro{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+   font-size: 2.5rem;
+   margin-top: 50px;
+   width: 100%;
+   
+   
+   
+   }
+   
+   .ficha-registro div{
+       margin-top: 10px;
+       margin-bottom: 30px;
+       display: flex;
+       justify-content: center;
+       align-items:center;
+     
+   }
+
+   .ficha-registro input{
+    height: 30px;
+    margin-left: 20px;
+   }
+
+
+   .guardar{
+    background-color: rgb(10, 141, 21);
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    color: antiquewhite;
+    cursor: pointer;
+    padding: 5px;
+}
+.guardar:hover{
+    background-color: rgb(3, 32, 3);
+}
+
+.guardarcl{
+    background-color: rgb(10, 141, 21);
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    color: antiquewhite;
+    cursor: pointer;
+    padding: 5px;
+    width: 150px;
+    height: 50px;
+
+}
+.guardarcl:hover{
+    background-color: rgb(3, 32, 3);
+}
+
+
+.cancelar-registro{
+    background-color: rgb(197, 13, 13);
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    color: antiquewhite;
+    cursor: pointer;
+    padding: 5px;
+}
+.cancelar-registro:hover{
+    background-color: rgb(32, 3, 3);
+}
+
+.clientes-ingresados{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.clientes-ingresados div{
+    color: black;
+    font-size: 1.5rem;
+    
+  
+
+}
+
+.clientes-ingresados-login{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+ 
+  
+}
+
+.clientes-ingresados-login div{
+    color: black;
+    font-size: 1.5rem;
+    
+  
+
+}
+
+.productos-ingresados{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.productos-ingresados div{
+    color: black;
+    font-size: 1.5rem;
+    
+  
+
+}
+
+.comprobantes-ingresados{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.comprobantes-ingresados div{
+    color: black;
+    font-size: 1.5rem;
+    
+  
+
+}
+
+.error{
+color:white;
+background-color: red;
+text-align: center;
+font-size: 2rem;
+position:fixed;
+bottom: 10px;
+width: 100%;
+
+
+}
+
+   
+
+
+
+
