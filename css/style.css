@@ -10,6 +10,7 @@
     align-items: center;
     padding: 10px;
     height: 100px;
+    width: 98.5%;
     background-image: url(../img/header.jpg);
    
 
@@ -17,6 +18,7 @@
 
 .logo-menu img{
    width: 150px;
+   
 }
 
 body{
@@ -98,7 +100,7 @@ flex-direction: column;
 .nav-bar{
     color: antiquewhite;
     position: fixed;
-    margin-left: 1350px;
+    margin-left: 67%
    
 
 }
@@ -123,7 +125,11 @@ flex-direction: column;
 
 .nav-bar-inicio{
     color: antiquewhite;
-    margin-left: 1150px;
+    margin-left: 70%;
+    display: flex;
+    margin-right: 5px;
+   
+    
    
 
 }
@@ -136,6 +142,7 @@ flex-direction: column;
     background-color: rgb(33, 66, 172);
     border-radius: 5px;
     font-size: 1rem;
+    margin-right: 10px;
 
 }
 
@@ -220,8 +227,8 @@ position: relative;
 display: inline-block;
 text-align: center;
 margin-top: 50px;
-height: 500px;
-width: 500px;
+height: 70%;
+width: 70%;
 background-color: antiquewhite;
 
 }
@@ -502,6 +509,8 @@ margin-left: 50px;
     margin-right: 50px;
     display: flex;
     flex-direction: column;
+    border-left: 2px solid black;
+    padding: 10px;
   
 }
 
@@ -533,6 +542,8 @@ margin-left: 50px;
     margin-right: 50px;
     display: flex;
     flex-direction: column;
+    border-left: 2px solid black;
+    padding: 10px;
   
 }
 
@@ -545,7 +556,10 @@ margin-left: 50px;
 }
 
 #lista-venta{
-    font-size: 0.8rem;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    border-left: 2px solid black;
+    padding: 10px;
 }
 
 .comprobantes-ingresados{
@@ -599,7 +613,7 @@ width: 100%;
 }
 
 .info-videos video{
-    width: 800px;
+    width: 90%;
 
     
 }
@@ -621,8 +635,8 @@ width: 100%;
 }
 
 .info-venta img{
-    width: 560px;
-    height: 400px;
+    width: 90%;
+    height: 90%;
     padding: 20px;
     
     
@@ -657,8 +671,8 @@ align-items: center;
     flex-direction: column;
     background-image: url(../img/prestamos.jpg);
     background-size: cover;
-    width: 1100px;
-    margin-left: 20%;
+    width: 90%;
+    margin-left: 5%;
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -693,5 +707,22 @@ align-items: center;
 
 .btn-prestamo:hover{
     background-color: rgb(5, 41, 5);
+}
+
+input{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 4px;
+    background-color: rgb(255, 255, 255);
+}
+
+.simuladorP a{
+    background-color: red;
+}
+
+.simuladorP a:hover{
+    background-color: rgb(48, 4, 13);
 }
 
