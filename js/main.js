@@ -171,13 +171,13 @@ const mostrarP = () =>{
             if(ventas.length >0){
                 ventas.forEach(venta =>{
                 const t = document.createElement('p')
-                const v = document.createElement('p');
+                const v = document.createElement('p')
                 const w = document.createElement('p')
                 const x = document.createElement('p')
                 const y = document.createElement('p')
                 const z = document.createElement('p')
                 
-                v.textContent = "-----------------------" + " " +  venta.comprobante  + "  ||  " + "Cliente: " + " " + venta.cliente + " || " +  "   Moneda: " + " " + venta.moneda; 
+                v.textContent = "-----------------------" + " " +  venta.comprobante  + "  ||  " + "Codigo cliente: " + venta.codigoCliente + " ||" + "Nombre: " + " " + venta.cliente + " || " +  "   Moneda: " + " " + venta.moneda; 
                 w.textContent = "Articulo 1:  "+"Cantidad: " + " " + venta.cant1 + " ---  Articulo: " + " " + venta.art1 + " --- " + "Unitario: " + venta.moneda + venta.val1 + " --- " +  "Total: " + " " + venta.moneda+ venta.tot1
                 x.textContent = "Articulo 2:  "+"Cantidad: " + " " + venta.cant2 + " ---  Articulo: " + " " + venta.art2 + " --- " + "Unitario: " + venta.moneda + venta.val2 + " --- " +  "Total: " + " " + venta.moneda+ venta.tot2 
                 y.textContent = "Articulo 3:  "+"Cantidad: " + " " + venta.cant3 + " ---  Articulo: " + " " + venta.art3 + " --- " + "Unitario: " + venta.moneda + venta.val3 + " --- " +  "Total: " + " " + venta.moneda+ venta.tot3
@@ -309,6 +309,7 @@ const mostrarP = () =>{
         evt.preventDefault();
         
         const comprobanteV = document.querySelector('#compventa').value
+        const codigoCV  = document.querySelector('#codigoCliente').value
         const clienteV = document.querySelector('#clienteventa').value;
         const monedaV = document.querySelector('#monventa').value;
         const totalV = document.querySelector('#total').value
@@ -335,7 +336,7 @@ const mostrarP = () =>{
         
         
         const objventa  = {
-
+        codigoCliente: codigoCV,    
         cliente: clienteV,
         moneda: monedaV,
         total: totalV,
@@ -363,7 +364,7 @@ const mostrarP = () =>{
        
         
         
-        if(clienteV == '' || monedaV == '' || totalV == '' || comprobanteV == ''){
+        if(codigoCV =='' || clienteV == '' || monedaV == '' || totalV == '' || comprobanteV == ''){
             mostrarError('Debe completar todos los datos')
             return              
         }
