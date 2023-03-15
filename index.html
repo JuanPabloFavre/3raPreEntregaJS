@@ -89,6 +89,30 @@
       </div>
     </nav>
 
+    <aside class="prestamos">
+      <h2>Sistema de calculo de Prestamos</h2>
+      <label for="">Cantidad de cuotas</label>
+      <select name="cuotas" id="cuotas">
+        <option value="6">6</option>
+        <option value="12">12</option>
+        <option value="18">18</option>
+        <option value="24">24</option>
+        <option value="30">30</option>
+      </select>
+      <label for="">Total Prestamo</label>
+      <input type="number" placeholder="Maximo a otorgar 300.000" id="totalprestamo">
+      <button onclick="calcularprestamo()">Calcular</button>
+    </aside>
+
+    <div class="prestamos">
+      <label for="">El valor cuota (U$S)</label>
+      <input type="text" readonly id="cuotasprestamo">
+      <label for=""> interes (%) </label>
+      <input type="text" id="interes" readonly>
+      <label for="">Total a Pagar (U$S)</label>
+      <input type="text" id="totalapagar" readonly>    
+    </div>
+
     
 
     <footer>
@@ -98,5 +122,5 @@
     </footer>
   </body>
 
-  <script src="./js/main.js"></script>
+  <script src="./js/index.js"></script>
 </html>

@@ -441,12 +441,19 @@ const mostrarP = () =>{
         }
 
 
+      
+
+
 
 
     regusuario.addEventListener('submit', agregarUsuario);
     registro.addEventListener('submit', agregarCliente);   
     regproductos.addEventListener('submit', agregarProducto);
     registroventa.addEventListener('submit', agregarVenta);
+
+
+
+
 
 
 
