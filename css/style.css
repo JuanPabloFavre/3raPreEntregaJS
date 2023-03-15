@@ -544,6 +544,10 @@ margin-left: 50px;
 
 }
 
+#lista-venta{
+    font-size: 0.8rem;
+}
+
 .comprobantes-ingresados{
     margin-right: 50px;
     display: flex;

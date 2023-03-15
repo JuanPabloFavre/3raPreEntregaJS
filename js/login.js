@@ -71,7 +71,7 @@ function iniciosesion(){
            clav = document.querySelector('#claveusu').value
 
            if(usuariosesion == usu && clavesesion == clav){
-                window.location=("menu.html")
+                window.location=("pages/Registro.html")
         
            }else{
 

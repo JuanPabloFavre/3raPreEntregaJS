@@ -177,12 +177,12 @@ const mostrarP = () =>{
                 const y = document.createElement('p')
                 const z = document.createElement('p')
                 
-                v.textContent = "Comprobante: " + " " +  venta.comprobante  + "  ||  " + "Cliente: " + " " + venta.cliente + " || " +  "   Moneda: " + " " + venta.moneda; 
+                v.textContent = "-----------------------" + " " +  venta.comprobante  + "  ||  " + "Cliente: " + " " + venta.cliente + " || " +  "   Moneda: " + " " + venta.moneda; 
                 w.textContent = "Articulo 1:  "+"Cantidad: " + " " + venta.cant1 + " ---  Articulo: " + " " + venta.art1 + " --- " + "Unitario: " + venta.moneda + venta.val1 + " --- " +  "Total: " + " " + venta.moneda+ venta.tot1
                 x.textContent = "Articulo 2:  "+"Cantidad: " + " " + venta.cant2 + " ---  Articulo: " + " " + venta.art2 + " --- " + "Unitario: " + venta.moneda + venta.val2 + " --- " +  "Total: " + " " + venta.moneda+ venta.tot2 
                 y.textContent = "Articulo 3:  "+"Cantidad: " + " " + venta.cant3 + " ---  Articulo: " + " " + venta.art3 + " --- " + "Unitario: " + venta.moneda + venta.val3 + " --- " +  "Total: " + " " + venta.moneda+ venta.tot3
-                z.textContent = "Totales: -- " + "Sub-Total:  " + venta.moneda + venta.subtotal + " |--| " + "IVA: " + venta.moneda + venta.iva + " |--| " + "Total: " + venta.moneda + venta.total  
-                t.textContent = "------------------------------------------------------------------------"
+                z.textContent = "--------------------" + "Sub-Total:  " + venta.moneda + venta.subtotal + " |--| " + "IVA: " + venta.moneda + venta.iva + " |--| " + "Total: " + venta.moneda + venta.total  
+                t.textContent = "________________________________________________________________________"
         
                 listaventa.appendChild(v)
                 listaventa.appendChild(w)
