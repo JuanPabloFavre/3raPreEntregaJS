@@ -4,64 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css" />
     <title>Ventas Paysandu</title>
   </head>
   <body>
     
     <header>
-      <div class="logo-menu">
-        <div>
-          <a href="./index.html">
-            <img src="./img/logo.png" alt="logo-empresa" />
+      <nav class="navbar bg-body-tertiary navbar bg-primary" data-bs-theme="dark">
+        <div class="container-fluid logo-menu">
+          <a href="./index.html" class="navbar-brand">
+            <img src="./img/logo-1.png" alt="logo-empresa" />
           </a>
+          <form class="d-flex">
+          <input type="button" value="Ingresar" class="btn btn-success" onclick="ingresar()"> 
+            <a href="#prestamoid" class="btn btn-danger">Simulador</a>
+          </form>
         </div>
-        <div class="nav-bar-inicio">
-          <div><a href="./login.html">Ingresar al sistema</a></div>
-          <div class="simuladorP"> <a href="#prestamoid">Simulador</a> </div>     
-         </div>
-      </div>
-    </header>
-
-    <nav>
-      <div class="banner-index">
-        <img src="./img/agronegocios.jpg" alt="banner" />
-      </div>
-    </nav>
-
-    <main class="orden-info">
-      <div class="info">
-        <img src="./img/imagen1.jpg" alt="" />
-        <p>
-          Las condiciones seguirán siendo esta semana desfavorables para los
-          cultivos: con 0% de agua en el suelo en gran parte de la región
-          pampeana, se esperan altas temperaturas y nuevamente lluvias escasas
-        </p>
-      </div>
-      <div class="info">
-        <img src="./img/imagen2.jpg" alt="" />
-        <p>
-          La primera estimación de área de la oleaginosa es de 16,8 M ha, un
-          4,3% de incremento respecto del ciclo anterior. Las gramíneas bajan:
-          el maíz podría sufrir una baja interanual de un 5% en su área,
-          mientras que la de trigo se mantiene en 5,9 M ha
-        </p>
-      </div>
-    </main>
-
-    <nav class="banner-medio">
-      <div>
-        <img src="./img/banner-medio.jpg" alt="">
-      </div>
-    </nav>
-
+      </nav>
    
 
-    <nav class="banner-medio2">
-      <div>
-        <img src="./img/venta.jpg" alt="">
+    </header>
+
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/banner1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/banner2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/banner3.jpg" class="d-block w-100" alt="...">
+        </div>
       </div>
-    </nav>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <img src="./img/imagen1.jpg" class="card-img-top" alt="...">
+            <h5 class="card-title">Informacion Meteorologica</h5>
+            <p class="card-text">Las condiciones seguirán siendo esta semana desfavorables para los
+              cultivos: con 0% de agua en el suelo en gran parte de la región
+              pampeana, se esperan altas temperaturas y nuevamente lluvias escasas..</p>
+           </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <img src="./img/imagen2.jpg" class="card-img-top" alt="...">
+            <h5 class="card-title">Estimaciones</h5>
+            <p class="card-text">La primera estimación es de un
+              4,3% de incremento respecto del ciclo anterior. Las gramíneas bajan:
+              el maíz podría sufrir una baja interanual de un 5% en su área,
+              mientras que la de trigo se mantiene en 5,9 M ha..</p>
+             </div>
+        </div>
+      </div>
+    </div>
 
     <div>
       <div class="info-venta">
@@ -74,22 +86,9 @@
       </div>
     </div>
 
-    <div>
-      <div class="info-videos">
-        <video src="./video/cosechadoras.mp4" controls muted autoplay></video>
-        <video src="./video/sequia.mp4" controls muted ></video>
-        <h3>10 Cosechadoras más Grandes y Potentes del Mundo</h3>
-        <h3>Las historias dramáticas atrás de la sequía</h3>
-      </div>
-    </div>
 
-    <nav class="banner-medio2">
-      <div>
-        <img src="./img/banner-fin.jpg" alt="">
-      </div>
-    </nav>
-
-    <aside class="prestamos" id="prestamoid">
+<aside class="container">
+    <div class="prestamos" id="prestamoid">
       <h2>Sistema de calculo de Prestamos</h2>
       <label for="">Cantidad de cuotas</label>
       <select name="cuotas" id="cuotas">
@@ -102,8 +101,10 @@
       <label for="">Total Prestamo</label>
       <input type="number" id="totalprestamo">
       <button class="btn-prestamo" onclick="calcularprestamo()">Calcular</button>
-    </aside>
+    </div>
+  </aside>
 
+  <aside class="container">
     <div class="prestamos">
       <label for="">El valor cuota (U$S)</label>
       <input type="text" readonly id="cuotasprestamo">
@@ -112,15 +113,16 @@
       <label for="">Total a Pagar (U$S)</label>
       <input type="text" id="totalapagar" readonly>    
     </div>
+  </aside>
 
-    
+  <footer>
+    <div class="banner-footer">
+      <img src="./img/footer.png" alt="banner" />
+    </div>
+  </footer>
 
-    <footer>
-      <div class="banner-footer">
-        <img src="./img/footer.png" alt="banner" />
-      </div>
-    </footer>
+ 
   </body>
-
+  <script src="./bootstrap/js/bootstrap.js"></script>
   <script src="./js/index.js"></script>
 </html>

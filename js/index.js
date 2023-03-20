@@ -71,4 +71,10 @@ function calcularprestamo(){
  
 
 }
+
+
+function ingresar(){
+
+    window.location=("./login.html")
+}
  

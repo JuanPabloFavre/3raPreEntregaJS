@@ -48,7 +48,7 @@ const mostrarU = () =>{
     if(usuarios.length > 0){
         usuarios.forEach(usuario =>{
         const u = document.createElement('p');
-        u.textContent = " ----> " +"Usuario: " +usuario.usuario  + " |" +  "Clave:    " +  usuario.clave +  " <---- ";
+        u.textContent ="Usuario: " +usuario.usuario  + " |" +  "Clave:    " +  usuario.clave ;
  
          listaUsuarios.appendChild(u)
  
@@ -86,7 +86,6 @@ function iniciosesion(){
 }
 
 }
-
 
 
      

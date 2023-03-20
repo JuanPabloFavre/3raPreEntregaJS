@@ -121,9 +121,11 @@ const mostrarU = () =>{
    if(usuarios.length > 0){
        usuarios.forEach(usuario =>{
        const u = document.createElement('p');
+       const z = document.createElement('p');
        u.textContent = usuario.Nombre + " " + usuario.Apellido + " - " + "Usuario: " + usuario.usuario + "   --->  clave: " + usuario.clave;
-
+       z.textContent = "____________________"  
         listaUsuarios.appendChild(u)
+        listaClientes.appendChild(z)
 
         })         
 
@@ -155,10 +157,13 @@ const mostrarP = () =>{
             if(clientes.length > 0){
                 clientes.forEach(cliente =>{
                 const c = document.createElement('p');
+                const z = document.createElement('p');
                 c.textContent = cliente.id + " " +cliente.Nombre + " " + cliente.Apellido + " - " + cliente.Direccion + " - " + cliente.Telefono + " - " + cliente.Email;
-                c.id = cliente.id;        
+                c.id = cliente.id;  
+                z.textContent = "____________________"      
                             
                 listaClientes.appendChild(c)
+                listaClientes.appendChild(z)
                 
                 });
             }
@@ -175,13 +180,17 @@ const mostrarP = () =>{
                 const w = document.createElement('p')
                 const x = document.createElement('p')
                 const y = document.createElement('p')
+                const z2 = document.createElement('p')
+                const z3 = document.createElement('p')
                 const z = document.createElement('p')
                 
-                v.textContent = "-----------------------" + " " +  venta.comprobante  + "  ||  " + "Codigo cliente: " + venta.codigoCliente + " ||" + "Nombre: " + " " + venta.cliente + " || " +  "   Moneda: " + " " + venta.moneda; 
-                w.textContent = "Articulo 1:  "+"Cantidad: " + " " + venta.cant1 + " ---  Articulo: " + " " + venta.art1 + " --- " + "Unitario: " + venta.moneda + venta.val1 + " --- " +  "Total: " + " " + venta.moneda+ venta.tot1
-                x.textContent = "Articulo 2:  "+"Cantidad: " + " " + venta.cant2 + " ---  Articulo: " + " " + venta.art2 + " --- " + "Unitario: " + venta.moneda + venta.val2 + " --- " +  "Total: " + " " + venta.moneda+ venta.tot2 
-                y.textContent = "Articulo 3:  "+"Cantidad: " + " " + venta.cant3 + " ---  Articulo: " + " " + venta.art3 + " --- " + "Unitario: " + venta.moneda + venta.val3 + " --- " +  "Total: " + " " + venta.moneda+ venta.tot3
-                z.textContent = "--------------------" + "Sub-Total:  " + venta.moneda + venta.subtotal + " |--| " + "IVA: " + venta.moneda + venta.iva + " |--| " + "Total: " + venta.moneda + venta.total  
+                v.textContent = venta.comprobante  + "  || " + "Nombre: " + " " + venta.cliente; 
+                w.textContent ="Cantidad: " + " " + venta.cant1 + " --- " + venta.art1 + " --- " +"Total: " + " " + venta.moneda+ venta.tot1
+                x.textContent ="Cantidad: " + " " + venta.cant2 + " --- " + venta.art2 + " --- " +"Total: " + " " + venta.moneda+ venta.tot2 
+                y.textContent ="Cantidad: " + " " + venta.cant3 + " --- " + venta.art3 + " --- " +"Total: " + " " + venta.moneda+ venta.tot3
+                z.textContent = "Sub-Total:  " + venta.moneda + venta.subtotal 
+                z2.textContent ="IVA: " + venta.moneda + venta.iva
+                z3.textContent = "Total: " + venta.moneda + venta.total
                 t.textContent = "________________________________________________________________________"
         
                 listaventa.appendChild(v)
@@ -189,6 +198,8 @@ const mostrarP = () =>{
                 listaventa.appendChild(x)
                 listaventa.appendChild(y)
                 listaventa.appendChild(z)
+                listaventa.appendChild(z2)
+                listaventa.appendChild(z3)
                 listaventa.appendChild(t)
              
                

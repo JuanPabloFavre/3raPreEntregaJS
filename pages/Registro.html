@@ -4,31 +4,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="../css/style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ingreso de comprobante Venta</title>
 </head>
 
 <body>
-  <header>
-    <div class="logo-menu">
-      <div>
-        <a href="../pages/Registro.html">
-          <img src="../img/logo.png" alt="logo-empresa" />
-        </a>
-      </div>
-      <div class="nav-bar">
-        <a href="#ubicacion-venta">Nueva Venta</a>
-        <a href="#ubicacion-cliente">Clientes</a>
-        <a href="#ubicacion-producto">Productos</a>
-        <a href="#ubicacion-registro">Usuarios</a>
-      </div>
-      <div class="nav-bar-cerrar">
-        <a href="../login.html">Cerrar Sesion</a>
-       </div>
-    </div>
 
-  </header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../img/logo-1.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#ubicacion-venta">Venta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ubicacion-cliente">Clientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ubicacion-producto">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ubicacion-registro">Usuarios</a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link" id="cerrar-sesion" href="../login.html">Finalizar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <nav class="titulo-pagina" id="ubicacion-venta">
     <h1>Nuevo Comprobante</h1>
   </nav>
@@ -37,69 +48,72 @@
 
     <form id="ficha-venta" class="venta-clientes">
       <div>
-      <label for="comprobante">Comprobante</label>
-      <input type="text" name="comprobante" id="compventa" placeholder="Factura 1234">
-    </div>
+        <label for="comprobante">Comprobante</label>
+        <input type="text" name="comprobante" id="compventa" placeholder="Factura 1234">
+      </div>
 
-    <div>
-      <label for="codigoCliente">Codigo Cliente</label>
-      <input type="text" name="codigoCliente" id="codigoCliente" placeholder="1234">
-    </div>
+      <div>
+        <label for="codigoCliente">Codigo Cliente</label>
+        <input type="text" name="codigoCliente" id="codigoCliente" placeholder="1234">
+      </div>
 
-    <div>
-      <label for="cliente">Nombre Cliente</label>
-      <input type="text" name="cliente" id="clienteventa" placeholder="Juan Perez" >
-    </div>
+      <div>
+        <label for="cliente">Nombre Cliente</label>
+        <input type="text" name="cliente" id="clienteventa" placeholder="Juan Perez">
+      </div>
 
-    <div>
-      <label for="moneda">Moneda Comprobante</label>
-      <input type="text" name="cliente" id="monventa" placeholder="$ o U$S">
-    </div>
-  </div>
+      <div>
+        <label for="moneda">Moneda Comprobante</label>
+        <input type="text" name="cliente" id="monventa" placeholder="$ o U$S">
+      </div>
+      </div>
 
       <table>
         <thead>
-            <th>Producto</th>
-            <th>Cantidad</th>
-            <th>Importe</th>
-            <th>Total</th>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Importe</th>
+          <th>Total</th>
         </thead>
         <tr>
-            <td><input type="text" id="art1"></td>
-            <td><input type="number" id="cant1"></td>
-            <td><input type="number" id="val1"></td>
-            <td><input type="text" class="subtotal" id="tot1" readonly></td>
+          <td><input type="text" id="art1"></td>
+          <td><input type="number" id="cant1"></td>
+          <td><input type="number" id="val1"></td>
+          <td><input type="text" class="subtotal" id="tot1" readonly></td>
         </tr>
         <tr>
           <td><input type="text" id="art2"></td>
           <td><input type="number" id="cant2"></td>
           <td><input type="number" id="val2"></td>
           <td><input type="text" class="subtotal" id="tot2" readonly></td>
-      </tr>
-      <tr>
-        <td><input type="text" id="art3"></td>
-        <td><input type="number" id="cant3"></td>
-        <td><input type="number" id="val3"></td>
-        <td><input type="text" class="subtotal" id="tot3" readonly></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>Base Imponible<br>IVA 22%<br><span>Total</span></td>
-      <td> <input type="text" id="base" readonly><br><input type="text" id="iva" readonly><br><input type="text" id="total" readonly></td>
-  </tr>
-    </table>
+        </tr>
+        <tr>
+          <td><input type="text" id="art3"></td>
+          <td><input type="number" id="cant3"></td>
+          <td><input type="number" id="val3"></td>
+          <td><input type="text" class="subtotal" id="tot3" readonly></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>Base Imponible<br>IVA 22%<br><span>Total</span></td>
+          <td> <input type="text" id="base" readonly><br><input type="text" id="iva" readonly><br><input type="text"
+              id="total" readonly></td>
+        </tr>
+      </table>
 
-    <div>
-      <input type="submit" value="Emitir Comprobante" class="guardarcl" />
-    </div>
+      <div>
+        <input type="submit" value="Emitir Comprobante" class="guardarcl" />
+      </div>
 
-    </form>
-
+      
     <div class="comprobantes-ingresados">
       <h2>Comprobantes Emitidos</h2>
       <div id="lista-venta"></div>
     </div>
+
+    </form>
+
 
   </main>
 
@@ -144,12 +158,15 @@
       <div>
         <input type="submit" value="Guardar" class="guardarcl">
       </div>
+
+
+      <div class="clientes-ingresados">
+        <h2>Clientes Ingresados</h2>
+        <div id="lista-clientes"></div>
+      </div>
     </form>
 
-    <div class="clientes-ingresados">
-      <h2>Clientes Ingresados</h2>
-      <div id="lista-clientes"></div>
-    </div>
+   
 
   </nav>
 
@@ -159,7 +176,9 @@
   </nav>
 
   <main class="clientes">
+
     <form class="ficha-cliente" id="ficha-productos">
+      
       <div>
         <label for="codigo">Codigo</label>
         <input type="number" name="codigo" id="codprod" />
@@ -188,12 +207,15 @@
       <div>
         <input type="submit" value="Guardar" class="guardarcl" />
       </div>
+
+
+      <div class="productos-ingresados">
+        <h2>Productos Ingresados</h2>
+        <div id="lista-productos"></div>
+      </div>
     </form>
 
-    <div class="productos-ingresados">
-      <h2>Productos Ingresados</h2>
-      <div id="lista-productos"></div>
-    </div>
+ 
   </main>
 
   <nav class="titulo-pagina" id="ubicacion-registro">
@@ -239,6 +261,7 @@
     </div>
   </footer>
   <script src="../js/main.js"></script>
+  <script src="../bootstrap/js/bootstrap.js"></script>
 </body>
 
 </html>
