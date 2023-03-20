@@ -806,18 +806,18 @@ margin: 5px;
 
 @media (max-width: 500px) {
     tr td input{
-        width: 81%;
+        width: 90%;
         padding: 0px;
     }
 
     td {
-            width: 50px;
+            width: 100px;
             padding: 0px;
         
     }
 
     .clientes{
-        width: 400px;
+        width: 500px;
     }
 
    #lista-venta{
