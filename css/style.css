@@ -806,7 +806,7 @@ margin: 5px;
 
 @media (max-width: 500px) {
     tr td input{
-        width: 65px;
+        width: 81%;
         padding: 0px;
     }
 
@@ -814,6 +814,10 @@ margin: 5px;
             width: 50px;
             padding: 0px;
         
+    }
+
+    .clientes{
+        width: 400px;
     }
 
    #lista-venta{
@@ -890,6 +894,10 @@ margin: 5px;
  
     margin-left: 20px;
     font-size: 1rem;
+   }
+
+   body{
+    width: 400px
    }
 
 }
