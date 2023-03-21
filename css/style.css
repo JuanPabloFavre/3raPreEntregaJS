@@ -244,7 +244,7 @@ background-color: antiquewhite;
 }
 
 .info img{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 500px;
     width: 700px; 
 }
@@ -282,12 +282,12 @@ margin-bottom: 20px;
     display: grid;
     grid-template-columns: 1fr;
     justify-items:baseline;
-    border: solid 2px black;
+    /* border: solid 2px black; */
     height: 100%;
     width: 600px;
 }
 .datos-empresa{
-    border: solid 2px black;
+    /* border: solid 2px black; */
     height: 100%;
     width: 600px;
     display: flex;
@@ -319,14 +319,14 @@ margin-bottom: 20px;
 }
 
 .datos-comprobante{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .cuerpo-comprobante{
    display: flex;
    justify-content: center;
    align-items: center;
-   border: solid 2px black;
+   /* border: solid 2px black; */
    width: 1200px;
    margin-left: 350px;
 }
@@ -415,7 +415,7 @@ margin-left: 50px;
 .clientes{
     display: grid;
     grid-template-columns:  1fr 1fr;
-    border: solid 2px black;
+    /* border: solid 2px black; */
     margin-top: 20px;
    
 }
@@ -523,7 +523,7 @@ margin-left: 50px;
     margin-right: 50px;
     display: flex;
     flex-direction: column;
-    border-left: 2px solid black;
+    /* border-left: 2px solid black; */
     padding: 10px;
   
 }
@@ -556,7 +556,7 @@ margin-left: 50px;
     margin-right: 50px;
     display: flex;
     flex-direction: row;
-    border-left: 2px solid black;
+    /* border-left: 2px solid black; */
     padding: 10px;
   
 }
@@ -855,7 +855,7 @@ margin: 5px;
     margin-right: 50px;
     display: flex;
     flex-direction: column;
-    border-left: 2px solid black;
+    /* border-left: 2px solid black; */
     padding: 10px;
     width: 300px;
   
