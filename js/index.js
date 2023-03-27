@@ -77,4 +77,54 @@ function ingresar(){
 
     window.location=("./login.html")
 }
+
+
+        const btn = document.querySelector('#btn')
+
+        btn.addEventListener('click', () => {
+            const key = "0ca063b746578ffb14d9f9455bdb165a";
+            let ciudad = document.querySelector('#ciudad').value;
+            ciudad = encodeURIComponent(ciudad)
+
+            if (ciudad != "") {
+                let url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${key}`
+                
+                fetch(url)
+                    .then(res => {
+                        return res.json()
+                    })
+                    .then(clima => {
+                        console.log(clima)
+                        let temp = clima.main.temp
+                        let viento = clima.wind.speed
+                        let pais = clima.sys.country
+
+                        t = temp - 273.15
+                        let html = document.querySelector('#temperatura')
+                        html.value =  t.toFixed(0) + "º Celsius"
+
+                        v = viento
+                        let html2 = document.querySelector('#viento')
+                        html2.value =  v.toFixed(2) + "Km/h"
+
+                        p = pais
+                        let html3 = document.querySelector('#pais')
+                        html3.value =  p 
+
+                        temp2 = Document.getElementById('temperatura').value
+                        console.log(temp2)
+
+                        if (temp2 < 10) {
+                            html.className = "cold"
+                        } else {
+                            html.className = "warm"
+                        }
+                    })
+                    .catch( err => {
+                        console.log(err);
+                    })
+            }
+
+        })
+
  

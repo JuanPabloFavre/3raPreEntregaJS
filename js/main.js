@@ -191,7 +191,7 @@ const mostrarP = () =>{
                 z.textContent = "Sub-Total:  " + venta.moneda + venta.subtotal 
                 z2.textContent ="IVA: " + venta.moneda + venta.iva
                 z3.textContent = "Total: " + venta.moneda + venta.total
-                t.textContent = "________________________________________________________________________"
+                t.textContent = "____________________________________"
         
                 listaventa.appendChild(v)
                 listaventa.appendChild(w)
@@ -451,11 +451,8 @@ const mostrarP = () =>{
 
         }
 
-
-      
-
-
-
+           
+   
 
     regusuario.addEventListener('submit', agregarUsuario);
     registro.addEventListener('submit', agregarCliente);   
