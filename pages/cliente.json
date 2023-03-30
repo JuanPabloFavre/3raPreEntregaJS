@@ -1,0 +1,42 @@
+[
+{
+    "id":1,
+    "Nombre": "Juan Pablo Favre",
+    "Telefono": "099564789",
+    "Direccion": "Juncal 569",
+    "Credito": "$ 2.323"
+},
+
+{
+    "id":2,
+    "Nombre": "Juan Perez",
+    "Telefono": "098558989",
+    "Direccion": "Libertad 443",
+    "Credito": "$ 42.111"
+},
+
+{
+    "id":3,
+    "Nombre": "Pedro Gonzales",
+    "Telefono": "091764488",
+    "Direccion": "18 de Julio 1232",
+    "Credito": "$ 12.568"
+},
+
+{
+    "id":4,
+    "Nombre": "Juan Gomez",
+    "Telefono": "095786321",
+    "Direccion": "Leandro Gomez 877",
+    "Credito": "$ 5214"
+},
+
+{
+    "id":5,
+    "Nombre": "Lucas Bulanti",
+    "Telefono": "095698745",
+    "Direccion": "Ituzaing 698",
+    "Credito": "$ 9954"
+}
+
+]

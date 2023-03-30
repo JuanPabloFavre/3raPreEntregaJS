@@ -559,6 +559,40 @@ margin-left: 50px;
 }
 
 
+.mostrarjson{
+
+border: solid 1px black;
+padding: 10px;
+background-color: rgba(250, 235, 215, 0.205);
+width: 700px;
+
+}
+
+.estados{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 20px;
+margin: 100px;
+border: solid 5px black;
+border-radius: 20px;
+
+}
+
+.btncl{
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 1rem;
+    margin: 20px;
+    padding: 10px;
+}
+
+.btncl:hover{
+    background-color: rgb(21, 48, 97);
+}
+
 .cancelar-registro{
     background-color: rgb(197, 13, 13);
     margin-top: 10px;
@@ -1018,6 +1052,28 @@ margin: 5px;
 .clima2 p{
     font-size: 1rem;
 }
+
+.mostrarjson{
+
+    border: solid 1px black;
+    padding: 10px;
+    background-color: rgba(250, 235, 215, 0.205);
+    width: 300px;
+    
+    }
+    
+    .estados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 100px;
+    border: solid 5px black;
+    border-radius: 20px;
+    width: 300px;
+    
+    }
 
 
 

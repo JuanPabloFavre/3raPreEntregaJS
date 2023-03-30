@@ -451,7 +451,62 @@ const mostrarP = () =>{
 
         }
 
-           
+
+
+
+
+
+        let btnClientes = document.querySelector('#btncliente');
+        
+
+        btnClientes.addEventListener('click', ()=>{
+            fetch("../pages/cliente.json")
+            .then((res)=>{
+
+                   return res.json() 
+            })          
+                        
+           .then((clientes)=>{ 
+            
+            renderClientes(clientes)
+
+
+           })    
+           .catch((err)=>console.log(err))
+
+        })
+
+
+           function renderClientes(Listaclientes){
+            const datos = document.querySelector('#dato');
+            let html = "";
+
+            Listaclientes.forEach(cliente=>{
+
+             html +=   `
+                <div class= "mostrarjson"> 
+                
+                <h3><STRONG>ID:</STRONG> ${cliente.id}</h3>
+                <h3><STRONG>Nombre:</STRONG> ${cliente.Nombre}</h3>
+                <h3><STRONG>Telefono:</STRONG> ${cliente.Telefono}</h3>
+                <h3><STRONG>Direccion:</STRONG> ${cliente.Direccion}</h3>
+                <h3><STRONG>Credito:</STRONG> ${cliente.Credito}</h3>
+                               
+                </div>      
+              
+                `
+
+            });
+            datos.innerHTML = html;
+
+
+
+           }
+
+       
+
+
+
    
 
     regusuario.addEventListener('submit', agregarUsuario);

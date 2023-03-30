@@ -111,9 +111,7 @@ function ingresar(){
                         let html3 = document.querySelector('#pais')
                         html3.value =  p 
 
-                        temp2 = Document.getElementById('temperatura').value
-                        console.log(temp2)
-
+                        
                         if (temp2 < 10) {
                             html.className = "cold"
                         } else {
