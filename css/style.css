@@ -894,6 +894,8 @@ margin: 5px;
 
 
 @media (max-width: 900px) {
+
+    
     tr td input{
         width: 90%;
         padding: 0px;
@@ -903,6 +905,10 @@ margin: 5px;
             width: 80px;
             padding: 0px;
         
+    }
+
+    body{
+        width: 400px;
     }
 
     .clientes{
@@ -1059,6 +1065,8 @@ margin: 5px;
     padding: 10px;
     background-color: rgba(250, 235, 215, 0.205);
     width: 300px;
+    margin-right: 100px;
+    
     
     }
     
@@ -1069,10 +1077,20 @@ margin: 5px;
     flex-direction: column;
     padding: 20px;
     margin: 100px;
-    border: solid 5px black;
+    border: solid 0px black;
     border-radius: 20px;
     width: 300px;
-    
+    margin-right: 300px;
+    margin-left: none;
+    }
+
+    .btncl{
+        margin-right: 100px;
+    }
+
+    .tituloestado{
+        font-size: 1.5rem;
+        margin-right: 60px;
     }
 
 
