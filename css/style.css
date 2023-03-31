@@ -229,6 +229,20 @@ background-color: rgb(88, 8, 8);
 
 }
 
+.btn-prestamo{
+    background-color: green;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 200px;
+    margin: 50px;
+
+}
+
+.btn-prestamo:hover{
+    background-color: rgb(5, 41, 5);
+}
+
 
 .informacion-index{
     display: flex;

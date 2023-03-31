@@ -69,9 +69,7 @@ function calcularprestamo(){
     }
 
  
-
 }
-
 
 function ingresar(){
 
@@ -98,6 +96,12 @@ function ingresar(){
                         let temp = clima.main.temp
                         let viento = clima.wind.speed
                         let pais = clima.sys.country
+                        moment.locale('es');
+                        let fecha = moment(Date.now()).format('Do MMMM YYYY')
+                        
+                        f = fecha
+                        let html4 = document.querySelector('#fecha')
+                        html4.value =  f 
 
                         t = temp - 273.15
                         let html = document.querySelector('#temperatura')
@@ -112,11 +116,13 @@ function ingresar(){
                         html3.value =  p 
 
                         
-                        if (temp2 < 10) {
-                            html.className = "cold"
-                        } else {
-                            html.className = "warm"
-                        }
+                        
+                         
+                    
+                    console.log(fecha)
+                       
+
+                      
                     })
                     .catch( err => {
                         console.log(err);
@@ -124,11 +130,7 @@ function ingresar(){
             }
 
         })
+ 
 
 
-
-       
-         
         
-      
-         
