@@ -410,6 +410,10 @@ margin-bottom: 20px;
     cursor:pointer;
 }
 
+.deuda{
+    color: red;
+}
+
 .cancelar:hover{
     background-color: rgb(126, 13, 13);
 }

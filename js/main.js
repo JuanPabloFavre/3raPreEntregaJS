@@ -490,7 +490,7 @@ const mostrarP = () =>{
                 <h3><STRONG>Nombre:</STRONG> ${cliente.Nombre}</h3>
                 <h3><STRONG>Telefono:</STRONG> ${cliente.Telefono}</h3>
                 <h3><STRONG>Direccion:</STRONG> ${cliente.Direccion}</h3>
-                <h3><STRONG>Credito:</STRONG> ${cliente.Credito}</h3>
+                <h3 class="deuda"><STRONG>Deuda:</STRONG> ${cliente.Credito}</h3>
                                
                 </div>      
               
