@@ -51,12 +51,8 @@ align-items: center;
     font-size: 2rem;
 }
 
-.cold {
-    color: cornflowerblue;
-}
-
-.warm {
-    color: brown
+.row{
+    margin: 50px;
 }
 
 .clima2{
@@ -945,6 +941,17 @@ margin: 5px;
     .clientes{
         width: 100%;
         margin: none;
+    }
+
+    .info-venta{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 10px;
+    
+        
+        
     }
 
    #lista-venta{
